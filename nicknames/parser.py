@@ -4,7 +4,7 @@ import os
 
 class NameDenormalizer(object):
     def __init__(self, filename=None):
-        filename = filename or os.path.join('nicknames', 'names.csv')
+        filename = filename or 'names.csv'
         lookup = collections.defaultdict(list)
         with open(filename) as f:
             reader = csv.reader(f)
